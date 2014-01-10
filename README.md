@@ -19,9 +19,13 @@ If you wish to edit the subreddit you wish to grab posts from, edit the reddit_b
 To change the hot/new/rising/controversial setting, find the 'for submission in subreddit_info.get_new' string and edit 'new' to either of these:
 
 hot
+
 rising
+
 controversial
+
 top
+
 gilded
 
 ##First, download the .zip or clone the package using GitHub desktop.
