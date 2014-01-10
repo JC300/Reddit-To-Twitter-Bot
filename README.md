@@ -28,7 +28,9 @@ gilded
 
 1. When opening and extracting, you should find these files:
 'reddit_bot.py'
+
 'posted_posts.txt'
+
 '/docs'
 
 reddit_bot.py - this is what you will be running.
@@ -36,10 +38,13 @@ posted_posts.txt - this is to keep a log of what goo.gl/[insert post url here] u
 /docs - Documentation
 
 
-2. Edit the reddit_bot.py file and look for:
+Edit the reddit_bot.py file and look for:
 'access_token'
+
 'access_token_secret'
+
 'consumer_key'
+
 'consumer_secret'
 
 Then, go to http://dev.twitter.com (assuming you already made a Twitter account for your bot) and enter your Twitter (bot)'s credentials. 
@@ -51,14 +56,10 @@ After this, create an application, and call it whatever you wish. Then create an
 Then save it.
 
 
-3. After that, on Windows, simply run the .py and it should show up and do it automatically.
+After that, on Windows, simply run the .py and it should show up and do it automatically.
 
-3a. Considering if you have Mac or Linux, open up Terminal and type:
+Considering if you have Mac or Linux, open up Terminal and type:
 'python reddit_bot.py' (you must have it in your home folder)
-
-
-4. Enjoy.
-
 
 Feel free to get in touch with me if you have any issues!
 
