@@ -16,7 +16,7 @@ Wanna send some DOGE my way? :)  DQhtQFgS2gtE1WtvtNeBUyFCoaJ8zMPniS
 
 If you wish to edit the subreddit you wish to grab posts from, edit the reddit_bot.py with a text editor and find the 'setup_connection_reddit('dogecoinscamwatch') string and edit the 'dogecoinscamwatch' to any subreddit you want.
 
-To change the hot/new/rising/controversial setting, find the 'for submission in subreddit_info.get_new' string and edit 'new' to either of these:
+To change the hot/new/rising/controversial setting, find the 'submission in subreddit_info.get_new' string and edit 'new' to either of these:
 
 hot
 
