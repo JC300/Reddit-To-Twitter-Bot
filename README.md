@@ -27,11 +27,14 @@ gilded
 0. First, download the .zip or clone the package using GitHub desktop.
 
 1. When opening and extracting, you should find these files:
+
 'reddit_bot.py'
 
 'posted_posts.txt'
 
 '/docs'
+
+
 
 reddit_bot.py - this is what you will be running.
 posted_posts.txt - this is to keep a log of what goo.gl/[insert post url here] url's are posted to Twitter
