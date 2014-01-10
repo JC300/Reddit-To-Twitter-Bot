@@ -24,9 +24,9 @@ controversial
 top
 gilded
 
-0. First, download the .zip or clone the package using GitHub desktop.
+##First, download the .zip or clone the package using GitHub desktop.
 
-1. When opening and extracting, you should find these files:
+When opening and extracting, you should find these files:
 
 'reddit_bot.py'
 
@@ -37,11 +37,14 @@ gilded
 
 
 reddit_bot.py - this is what you will be running.
+
 posted_posts.txt - this is to keep a log of what goo.gl/[insert post url here] url's are posted to Twitter
+
 /docs - Documentation
 
 
-Edit the reddit_bot.py file and look for:
+##Edit the reddit_bot.py file and look for:
+
 'access_token'
 
 'access_token_secret'
@@ -50,7 +53,8 @@ Edit the reddit_bot.py file and look for:
 
 'consumer_secret'
 
-Then, go to http://dev.twitter.com (assuming you already made a Twitter account for your bot) and enter your Twitter (bot)'s credentials. 
+
+##Then, go to http://dev.twitter.com (assuming you already made a Twitter account for your bot) and enter your Twitter (bot)'s credentials. 
 
 It should show a page with a 'create application' button on it. If there is not, simply press the dropdown menu at the end of the navbar, and press 'View Applications'.
 
@@ -59,7 +63,7 @@ After this, create an application, and call it whatever you wish. Then create an
 Then save it.
 
 
-After that, on Windows, simply run the .py and it should show up and do it automatically.
+##After that, on Windows, simply run the .py and it should show up and do it automatically.
 
 Considering if you have Mac or Linux, open up Terminal and type:
 'python reddit_bot.py' (you must have it in your home folder)
