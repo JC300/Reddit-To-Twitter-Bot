@@ -4,10 +4,10 @@ import requests
 import tweepy
 import time
 
-access_token = '2281115456-IN0iDReAEsoynUjBA5306e7y2dHoEF0JCm6e9wL'
-access_token_secret = '4BIXBvl4FKcxbywusogHY75FfStsdBxIvQ1efQ224lDj1'
-consumer_key = 'WoQmQDWup7kzA2sG1gRhBg'
-consumer_secret = 'rpwi8Q8TWePbPLXXGNpDGERwaDnBQz9MZJuASGORpU'
+access_token = 'Insert Twitter Access Token'
+access_token_secret = 'Insert Twitter Access Token Secret'
+consumer_key = 'Insert Twitter Consumer Key'
+consumer_secret = 'Insert Twitter Consumer Secret'
 
 def strip_title(title):
 	if len(title) < 94:
@@ -18,11 +18,11 @@ def strip_title(title):
 def tweet_creator(subreddit_info):
 	post_dict = {}
 	post_ids = []
-	print "[Dogebot] yo i'm dogebot i be gettin those posts from reddit"
+	print "[Bot] Getting new posts from subreddit.."
 	for submission in subreddit_info.get_new(limit=20):
 		post_dict[strip_title(submission.title)] = submission.url
 		post_ids.append(submission.id)
-	print "[Dogebot] such generate short link"
+	print "[Bot] Generating a short link using goo.gl.."
 	mini_post_dict = {}
 	for post in post_dict:
 		post_title = post
@@ -32,7 +32,7 @@ def tweet_creator(subreddit_info):
 	return mini_post_dict, post_ids
 
 def setup_connection_reddit(subreddit):
-	print "[Dogebot] very connection  wow very reddit"
+	print "[Bot] Connecting to Reddit.."
 	r = praw.Reddit('dogecoinscamwatch'
 				'monitoring %s' %(subreddit)) 
 	subreddit = r.get_subreddit(subreddit)
@@ -70,13 +70,13 @@ def tweeter(post_dict, post_ids):
 	for post, post_id in zip(post_dict, post_ids):
 		found = duplicate_check(post_id)
 		if found == 0:
-			print "[bot] Posting this link on twitter"
+			print "[Bot] Posting this link on Twitter.."
 			print post+" "+post_dict[post]+""
 			api.update_status(post+" "+post_dict[post]+"")
 			add_id_to_file(post_id)
 			time.sleep(30)
 		else:
-			print "[Dogebot] wow very post.. such duplicate" 
+			print "[Bot] Duplicate post" 
 
 if __name__ == '__main__':
 	main()
